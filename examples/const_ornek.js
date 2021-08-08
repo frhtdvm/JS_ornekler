@@ -5,17 +5,18 @@ console.log(a);
 
 // constants are block-scoped
 {
-    const a = 50;
-    console.log(a);
+  const a = 50;
+  console.log(a);
 }
 console.log(a);
 
-const arr = ['work', 'exercise', 'eat'];
+const arr = ["work", "exercise", "eat"];
 console.log(arr);
 
 // add elements to arr array
-arr[3] = 'hello';
+arr[3] = "hello";
 console.log(arr);
+console.log("Hello for Git");
 
 // the following code gives error
 // changing the value of a throws an error
@@ -23,5 +24,4 @@ console.log(arr);
 // a = 8;
 
 // throws an error
-// const x; 
-
+// const x;
