@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="degerial.html" method="post">
+      <fieldset>
+        <legend>Isim bilgileri</legend>
+        <label for="ad">Adinizi Giriniz</label>
+        <input type="text" id="ad" /><br /><br />
+
+        <label for="soyad">Soyadinizi giriniz</label>
+        <input type="text" id="soyad" />
+
+        <label for="il">Sehirler: </label>
+        <input list="sehirler" id="il" name="il">
+        <datalist id="sehirler">
+            <option value="Istanbul"></option>
+            <option value="Bursa"></option>
+            <option value="Hatay"></option>
+        </datalist>
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Cinsiyet ve Renk</legend>
+        <input type="radio" name="cinsiyet" value="erkek" id="erkek" />
+        <label for="erkek"> Erkek</label>
+
+        <input type="radio" name="cinsiyet" value="kadin" id="kadin" />
+        <label for="kadin"> Kadin</label>
+
+        <br /><br />
+        <label for="yesil">Yesil</label>
+        <input type="checkbox" name="chbkirmizi" id="kirmizi" value="kirmizi" />
+        <label for="kirmizi">Kirmizi</label>
+        <br /><br />
+      </fieldset>
+
+      <input type="checkbox" name="chbmavi" id="mavi" value="mavi" />
+      <label for="mavi">Mavi</label>
+      <input
+        type="checkbox"
+        name="chbyesil"
+        id="yesil"
+        value="yesil"
+        checked="checked"
+      />
+
+      <input type="submit" value="Gönder" />
+      <input type="reset" value="Formu Sil" />
+      <input
+        type="button"
+        onclick="alert('Merhaba')"
+        value="Normal bir Button"
+      />
+      <br /><br />
+      <label for="arabalar"> Favori Markan</label>
+      <select name="arabalar" id="arabalar">
+        <option value="Mercedes">Mercedes</option>
+        <option selected value="BMW">BMW</option>
+        <option value="Opel">Opel</option>
+        <option value="Porsche">Porsche</option>
+      </select>
+      <br /><br />
+      <label for="adres">ADRES:</label>
+      <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+      <br /><br /><br />
+      <label for="bio">Biografi</label>
+      <textarea
+        name="bio"
+        id="bio"
+        style="width: 250px; height: 50px"
+      ></textarea>
+      <br /><br />
+
+      <button type="button" onclick="alert('Selamun Aleyküm')">
+        Yeni button
+      </button>
+    </form>
+  </body>
+</html>
