@@ -2,7 +2,7 @@
 *.jpg
 *.jpeg
 *.png
-
+*.gif
 # videos
 *.mp4
 #log
