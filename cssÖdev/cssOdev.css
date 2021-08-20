@@ -1,0 +1,28 @@
+body {
+  background-color: burlywood;
+  font-family: monospace;
+}
+h1 {
+  color: #3399ff;
+  text-decoration: underline;
+  font-style: italic;
+}
+h3 {
+  text-decoration: underline;
+  font-size: 23px;
+}
+p {
+  font-style: italic;
+}
+ul {
+  font-style: italic;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+a {
+  font-size: 18px;
+}
