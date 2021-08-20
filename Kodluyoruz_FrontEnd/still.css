@@ -1,8 +1,13 @@
 p {
   font-size: 55px;
   border: 2px solid powderblue;
+  font-family: monospace;
 }
 body {
   color: teal;
   background-color: black;
+}
+h2 {
+  color: red;
+  font-size: 55px;
 }
