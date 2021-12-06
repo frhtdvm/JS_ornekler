@@ -1,6 +1,5 @@
-#DENEME
+#JS/HTML/CSS examples
 
-# ALT BILGI
+# Bu Repo da JS/HTML/CSS ile ilgili örnekler ve ders ödevleri bulunmaktadir
 
-Git ögrenme adimlari
-Denemeler
+Bu örnekler genelde Patika.dev, Hackerrank ve Exercism sayfasindan alinmistir.
