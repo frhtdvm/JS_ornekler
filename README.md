@@ -1,4 +1,4 @@
-#JS/HTML/CSS examples
+# JS/HTML/CSS examples
 
 ## Main branch
 
