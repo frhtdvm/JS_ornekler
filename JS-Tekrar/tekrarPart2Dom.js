@@ -50,9 +50,9 @@ ulDOM.prepend(liDOM);
  */
 
 /**
- * * ders 13 DOM da CSS class bilgisiu eklemek cikarmak 
+ * * ders 13 DOM da CSS class bilgisiu eklemek cikarmak
  */
-//burada CSS bilgileri eklenizor
+/* //burada CSS bilgileri eklenizor
 let greeting = document.querySelector("#greeting");
 greeting.classList.add("text-primary");
 greeting.classList.add("title");
@@ -63,3 +63,71 @@ greeting.classList.add("new-info", "second-class", "third-class");
 
 greeting.classList.remove("title", "second-class", "third-class");
 console.log(greeting.classList);
+ */
+
+// ^ ders 14 Operatörler
+/* 
+let price = "100";
+//* === Esitse, esittir degil yani !
+console.log(price == 1);
+console.log(price == 100);
+//* === hem degeri hem turu esitse
+console.log(price == 1);
+console.log(price == "100");
+//* != esit degilse
+console.log(price == 1);
+console.log(price != 1);
+//* < kucukse
+console.log(price < 1);
+
+//* <= Kucuk esitse
+console.log(price <= 1);
+
+//* > Buyukse
+console.log(price > 1);
+//* >= Buyuk esitse
+console.log(price >= 1);
+
+//* && ve
+console.log(price == 1 && price == 100);
+
+//* || veya
+console.log(price == 1 || price == 100);
+
+//* ! degil (tersi)
+console.log(price == 1 || !price == 100);
+ */
+
+// ^ ders 15 if else yapilari
+
+/* let username = prompt("Kullanici adini giriniz");
+
+if (username.length > 0) {
+  console.log(`Kullanici Bilginiz = ${username}`);
+} else {
+  console.log("Lutfen isminizi giriniz ! ");
+} */
+
+//^ ders 16 Coklu if else yapilari
+/* 
+let userName = prompt("Kullanici adinizi giriniz");
+let age = prompt("Yasiniz: ?");
+let info = document.querySelector("#info");
+
+if (userName && age >= 18) {
+  info.innerHTML = "Ehliyet alabilirsiniz";
+} else if (!userName) {
+  info.innerHTML = "Kullanici adiniz Yok";
+} else if (!(age >= 18)) {
+  info.innerHTML = "Yas bilginiz yok veya 18 yasindan kucuksunuz";
+} else "Yanlis bilgi girdiniz tekrar deneyiniz"; */
+
+//^ ders 17 Ternarz Operatörleri
+/* 
+let userName = prompt("Kullanici adinizi giriniz");
+let info = document.querySelector("#info"); */
+
+//! Ternary if -> kosul ? dogruysa : yanlissa
+
+//info.innerHTML = `${userName.length > 0 ? userName: "Kullanici bulunamadi"}`
+
