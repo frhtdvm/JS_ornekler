@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Tekrar</title>
-    <style>
+    <!-- <style>
       .text-primary {
         color: blue;
       }
       .text-danger {
         color: red;
       }
-    </style>
+    </style> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <h1>JS Tekrar</h1>
+
     <!-- ders 10 Dom dersleri 
     <h2 id="title">Merhaba dunya</h2>
     <ul id="list">
@@ -34,11 +41,44 @@
       <li>Earum, quidem vero.</li>
     </ul>-->
 
-    <!--ders 23 js fonksiyonlar bolum sonu egzersizleri -->
+    <!--ders 23 js fonksiyonlar bolum sonu egzersizleri 
     <h3 id="counter">100</h3>
     <button id="increase">Arttir</button>
     <button id="decrease">Azalt</button>
-    
+    -->
+    <!-- 26. Ders Form ve Submitler-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <form id="userForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">Kullanici Adi</label>
+              <input class="form-control" type="text" name="username" id="username" />
+            </div>
+            <div class="mb-3">
+              <label for="score" class="form-label">Not Bilgisi</label>
+              <input class="form-control" type="number" name="score" id="score" />
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-success">Gönder</button>
+              <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="tekrarPart4.js"></script>
   </body>
 </html>
