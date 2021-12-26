@@ -19,7 +19,7 @@ function formSubmit(event) {
   console.log("Islem gerceklesti!");
 } */
 //* 29 Formlar ile ilgili Egzersiz
-let userFormDOM = document.querySelector("#userForm");
+/* let userFormDOM = document.querySelector("#userForm");
 userFormDOM.addEventListener("submit", formHandler);
 const alertDOM = document.querySelector("#alert");
 
@@ -57,3 +57,85 @@ const addItem = (userName, score) => {
   );
   userListDOM.append(liDOM);
 };
+ */
+//* 30 Arrayler
+//^ genel giris bilgileri standart uzunluklari hesaplama, ilk eleman son eleman bulma vs
+
+//Array fonksiyonlari, item ekleme silme degistirme vs
+
+/* let items = [10, 20, 30, 40];
+console.log("items - ilk hali : ", items);
+
+//? Array: sona oge/eleman eklemek -> Push
+items.push(50);
+console.log("50 : ", items);
+//? array: basa oge eklemek -> unshift
+items.unshift(5);
+console.log("5 basa eklendi : ", items);
+//? Array: sondaki ogeyi cikarmak -> pop
+let lastItem = items.pop(); //son elemani hem cikar, cikardigini lastItem a esitle
+console.log("lastItem = ", lastItem, "items = ", items);
+//? array: basa oge ciakrmak -> shift
+let firstItem = items.shift(); // ilk elemani hem cikar, cikardigini firstItem a ekle
+console.log("firstItem = ", firstItem, "items = ", items);
+//? Array icindeki bir bilgiyi degistirmek
+// ilk ogenin degistirilmesi
+items[0] = 7;
+console.log(items);
+// sonuncu ogenin degistirilmesi
+items[items.length - 1] = 100;
+console.log(items);
+ */
+//* 31 Array fonksiyonlari
+let items = [1, 2, 3, 4, 5];
+//^ Array icinde array ekleme
+let femaleUsers = ["Ayse", "Hulya", "Merve"];
+let maleUsers = ["Ferhat", "Zeyd", "Ferhat"];
+items.unshift(femaleUsers);
+console.log(items);
+items.push(maleUsers);
+console.log(items);
+console.log(items[0].length); //array icindeki array in uzunlugu
+console.log(items[0][0]); // ayse bilgisine ulasildi
+//^ array icerisinden oge ayirmak -> splice(pos, item)
+let newItems = items.splice(1, 5);
+
+console.log("newItems: ", newItems);
+console.log("items: ", items);
+
+//^ Array icerisindeki ogenin index bilgsini almak -> indexOf('value')
+items.unshift("lorem");
+items.push("ipsum");
+
+console.log(items.indexOf("ipsum"));
+//^ Array kompyalamak -> slice ve (ES6) yontemleri
+//eski yöntemi
+let copyItems = items;
+console.log(items);
+
+copyItems.pop(); // son ogeyi cikar
+console.log("copyItems", copyItems);
+console.log("items", items);
+
+console.log("kopyalandiktan sonraki hali");
+copyItems = items.slice(); // kopyalama yapti
+copyItems.pop(); //son ogeyi cikar
+console.log("copyItems", copyItems);
+console.log("items", items);
+
+// es6 yontemi
+let es6Items = [...items]; // es6 ile ve sonrasinda gelen kopyalama yontemi
+console.log(es6Items);
+
+//^ Iki array bilgisini birlestirmek -> es6
+let allUser = [...femaleUsers, ...maleUsers]; // birden fazla array yapisini birlestirmek
+console.log(allUser);
+
+//^Array icerisindeki bilgiyi String e cevirmek -> toString, join
+console.log(allUser.toString);
+console.log(allUser.join("---"));
+
+//^ istedigimiz index bilgisine oge eklemek -> splice(index, 0, value)
+allUser.splice(allUser.length - 1, 0, "Mellisa");
+allUser.splice(Math.floor(allUser.length / 2), 0, "Lorem"); // bu sekilde listenin ortasina deger ekleniyor
+console.log(allUser);
