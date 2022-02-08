@@ -87,7 +87,7 @@ items[items.length - 1] = 100;
 console.log(items);
  */
 //* 31 Array fonksiyonlari
-let items = [1, 2, 3, 4, 5];
+/* let items = [1, 2, 3, 4, 5];
 //^ Array icinde array ekleme
 let femaleUsers = ["Ayse", "Hulya", "Merve"];
 let maleUsers = ["Ferhat", "Zeyd", "Ferhat"];
@@ -139,3 +139,91 @@ console.log(allUser.join("---"));
 allUser.splice(allUser.length - 1, 0, "Mellisa");
 allUser.splice(Math.floor(allUser.length / 2), 0, "Lorem"); // bu sekilde listenin ortasina deger ekleniyor
 console.log(allUser);
+ */
+
+//* döngüler
+//? For, Break ve Contiounu  diger diller ile bire bir ayni
+/* let index = 0;
+for (; index.length; index++); */
+
+const LOREM_LIST = [
+  "lorem",
+  "ipsum",
+  "dolor",
+  "amet",
+  "consectetur",
+  "adipisicing",
+  "elit",
+];
+let counter = 0;
+
+/* for(; counter < 10; counter++) {
+  console.log(counter);
+  if (counter === 5) {break};
+}
+for(; counter < 10; counter++) {
+  if (counter === 5) {countinue}
+  console.log(counter)
+} */
+
+/* const UL_DOM = document.querySelector("#userList");
+
+let index = 0;
+
+for (; index < LOREM_LIST.length; index++) {
+  if (LOREM_LIST[index] == "dolor") {
+    break;
+  }
+  let LI_DOM = document.createElement("li");
+  LI_DOM.innerHTML = LOREM_LIST[index];
+  UL_DOM.append(LI_DOM);
+}
+
+for (; index < LOREM_LIST.length; index++) {
+  if (LOREM_LIST[index] == "dolor") {
+    countinue;
+  }
+  let LI_DOM = document.createElement("li");
+  LI_DOM.innerHTML = LOREM_LIST[index];
+  UL_DOM.append(LI_DOM);
+} */
+
+//? while döngüsü
+//diger dillerle ayni syntaxi var ve calismasini ayni
+
+/* let userName;
+
+while (!userName) {
+  //burada !userName derken bos oldugu sürece calis demek
+  userName = prompt("Kullanici adini giriniz");
+  console.log(userName);
+}
+ */
+
+//? Foreach ve arraylerin cagrilmasi
+/* const PRODUCTS = ["Laptop", "Phone","Speaker", "Desktop PC", "Server", "mouse", "Keyboard"];
+
+//PRODUCTS.forEach((product, index, array) => console.log(array[index] =product + "111"));
+PRODUCTS.forEach((product, index, array) => console.log(array[index] `${product.toUpperCase}` ));
+
+console.log(PRODUCTS)
+
+const UL_DOM = document.querySelector("#userList");
+
+PRODUCTS.forEach( item =>{
+const liDOM = document.createElement("li");
+liDOM.innerHTML = item
+userListDOM.append(liDOM)
+})
+ */
+//? Filter yöntemi ile array icinde sadece istenilen bilgilerin listesini olusturma
+/* 
+const PRODUCTS = ["Laptop", "Phone","Speaker", "Desktop PC", "Server", "mouse", "Keyboard"];
+PRODUCTS.filter //-> fonksiyonu sayesinde filtre uygulanir
+ */
+//?Map ile Array İçerisideki Yapının Değiştirilerek Yeni Liste Oluşturulması
+/* const USERS = ["AYSE", "MEHMET", "TUGCE", "AKSEL"];
+const NEW_USERS = USERS.map((user) => user.toLowerCase());
+console.log(NEW_USERS);
+ */
+
